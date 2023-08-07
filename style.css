@@ -1,0 +1,54 @@
+body {
+  /*
+  margin: 0;
+  padding: 0;
+  background-image: url('art/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  background-color: black;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: ease 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.title h1 {
+  display: none;
+  position: absolute;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title img {
+  max-width: 100%;
+}
+
+.image-title {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  transition: ease 0.3s;
+  background-color: black;
+  top: 0;
+}
